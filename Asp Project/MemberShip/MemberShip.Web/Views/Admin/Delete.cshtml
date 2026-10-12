@@ -1,0 +1,15 @@
+﻿@using MemberShip.Domain
+@model User
+
+@{
+    ViewData["Title"] = "حذف";
+}
+
+<h3>از حذف کاربر با ایمیل @Model.Email اطمینان دارید ؟</h3>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Delete" class="btn btn-danger" /> |
+    <a asp-action="UserManagement" class="btn btn-danger">خیر</a>
+</form>
+

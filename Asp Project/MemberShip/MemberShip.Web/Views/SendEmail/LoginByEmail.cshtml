@@ -1,0 +1,30 @@
+﻿@using MemberShip.Web.ViewModels.SendEmail
+@model LoginByEmailViewModel
+
+@{
+    ViewData["Title"] = "ورود با کد یکبار مصرف";
+}
+
+<h1>ورود با کد یکبار مصرف</h1> 
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="LoginByEmail">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" oninput="this.value = this.value.toLowerCase()" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ارسال کد" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

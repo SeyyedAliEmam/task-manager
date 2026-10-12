@@ -1,0 +1,14 @@
+# Backend - ASP.NET
+bin/
+obj/
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+*.user
+.vs/
+
+# Frontend - React
+node_modules/
+.env
+build/
+dist/
