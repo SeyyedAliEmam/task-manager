@@ -3,10 +3,5 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-    plugins: [react(),tailwindcss()],
-    server: {
-    watch: {
-      ignored: ["**/server/**", "**/db.json"],
-    },
-  },
+  plugins: [react(), tailwindcss()],
 })

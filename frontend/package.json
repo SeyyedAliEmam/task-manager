@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "server": "json-server server/db.json",
     "preview": "vite preview"
   },
   "dependencies": {
